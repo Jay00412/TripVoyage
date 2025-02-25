@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Travel web</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:wght@100..900&family=Montserrat:wght@100..900&family=Poppins:wght@100..900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="view.css">
+</head>
+<body>
+	<header>
+			<div class="nav-logo">
+				<h2 class="name-of-web">Travel.co</h2>
+			</div>
+			<nav class="nav-bar">
+				<ul>
+				<li> <a class="nav-link" href="index.html" target="_self"> HOME</a> </li>
+				 <li> <a class="nav-link" href="about.html"> ABOUT US</a> </li>
+				 <li> <a class="nav-link" href="contact.html"> CONTACTS</a> </li>
+				 <li> <a class="nav-link" href="service.html"> SERVICES</a> </li>
+				 <li> <button class="book-btn" id="openModal">BOOK NOW</button> </li>
+				</ul>	
+			</nav>
+			
+		</header>
+		<!-- adadadad -->
+			<div class="modal" id="my-Modal">				
+			
+			<div class="inquire-form" >
+				<span class="close" id="closeModal"><i class="fa-solid fa-xmark"></i></span>
+
+					<h3 class="inquire-header">Inquire Now!</h3>
+					<p class="description">Fill out the form below and we'll get back to you shortly </p>
+
+				<div class="form-container" >
+
+					<div class="fullname">
+						<input  class="f-name" type="text" id="f-name" placeholder="First Name" required >
+						<input class="l-name" type="text" id="l-name" placeholder="Last Name" required>
+					</div>
+					<div class="private-info">
+						<input class="email" type="email" id="email" placeholder="example@domain.com" required>
+	        			<input class="phone-number" type="tel" placeholder="0-912-345-6789"  maxlength="11" required >
+					</div>	
+				</div>	
+							
+				<div class="inquire-date">
+					<section>
+						<div class="form-wrap">
+							<form id="inquiryForm">
+									<select class="form-control" required>
+									<option value="Destination" disabled selected>Destination</option>
+									<option value="Destination">Boracay</option>
+									<option value="Destination">El Nido</option>
+									<option value="Destination">Bohol</option>
+									<option value="Destination">Mayon Volcano</option>
+									<option value="Destination">Nacpan Palawan</option>
+									<option value="Destination">Intramuros - Manila</option>
+									<option value="Destination">Vigan City</option>
+									<option value="Destination">Baguio City</option>
+
+								</select>
+								<select class="form-control" required>
+									<option value="Duration" disabled selected> Duration </option>
+									<option value="Day-1">1 - Day</option>
+									<option value="2-4 Days">2 - 4 Days</option>
+									<option value="5-7 Days">5 - 7 Days</option>
+									<option value="7+ Days">7 + Days</option>
+								</select>
+							</form>
+						</div>
+					</section>
+				</div>
+				
+					<div class="submit-btn-container">
+						<button id="submit" class="submit-btn">Submit</button>
+				</div>
+			</div>
+		</div> 	
+		<!-- asdasdasda -->
+	<!--------------------------- START OF HERO SECTION ---------------------------->
+	<section>
+		<div class="hero-bg-img">
+			<img src="assets/mayon-1.webp">
+			<div class="hero-text">
+				
+				<h1>Explore the Beauty of the Philippines – Your Next Adventure Awaits!</h1>
+				<p>Find the best destinations, travel costs, and traveler reviews.</p>
+				<button class="explore-btn">Start Exploring</button>
+			</div>
+		</div>
+	</section>
+	<!--------------------------- END OF HERO SECTION ---------------------------->
+
+	<!--------------------------- START OF DESTINATION GRID ---------------------------->
+	<div class="destination-grid">
+		<div class="card">
+			<img class="boracay1" src="assets/BORACAY.png" alt="Boracay">
+			<div class="card-container">
+				<h4><b>Boracay</b></h4>
+				<p>Crystal clear waters and white sandy beaches.</p>
+				<div class="card-details">
+					<div class="price">
+						<p>From</p>
+						<h3><span>₱</span>3,500.50</h3>
+						<p>*Price varies</p>
+					</div>
+					<div class="ratings">
+						<div>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star-half-stroke"></i></span> 
+						</div>
+						<p>4.8 (9.9k)</p>
+					</div>
+				</div>
+					<h5>
+						<span><i class="fa-regular fa-clock"></i></span> 7 days
+					</h5>
+					<p>
+						<span><i class="fa-solid fa-check"></i></span> Free Cancellation
+					</p>
+			</div>
+		</div>
+
+		<div class="card">
+			<img class="elnido2" src="assets/ELNIDO.webp" alt="El Nido">
+			<div class="card-container">
+				<h4><b>El Nido</b></h4>
+				<p>Crystal clear waters and white sandy beaches.</p>
+				<div class="card-details">
+					<div class="price">
+						<p>From</p>
+						<h3><span>₱</span>4,500.50</h3>
+						<p>*Price varies</p>
+					</div>
+					<div class="ratings">
+						<div>
+							<span><i class="fa-solid fa-star star-icons"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star-half-stroke"></i></span> 
+						</div>
+						<p>4.8 (10k)</p>
+					</div>
+				</div>
+					<h5>
+						<span><i class="fa-regular fa-clock"></i></span> 7 days
+					</h5>
+					<p>
+						<span><i class="fa-solid fa-check"></i></span> Free Cancellation
+					</p>
+			</div>
+		</div>
+
+		<div class="card">
+			<img class="bohol-3" src="assets/bohol-1.jpg" alt="Bohol">
+			<div class="card-container">
+				<h4><b>Bohol</b></h4>
+				<p>Crystal clear waters and white sandy beaches.</p>
+				<div class="card-details">
+					<div class="price">
+						<p>From</p>
+						<h3><span>₱</span>2,800.50</h3>
+						<p>*Price varies</p>
+					</div>
+					<div class="ratings">
+						<div>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star-half-stroke"></i></span> 
+						</div>
+						<p>4.7 (1.5k)</p>
+					</div>
+				</div>
+					<h5>
+						<span><i class="fa-regular fa-clock"></i></span> 7 days
+					</h5>
+					<p>
+						<span><i class="fa-solid fa-check"></i></span> Free Cancellation
+					</p>
+			</div>
+		</div>
+
+		<div class="card">
+			<img class="rizal" src="assets/rizal.jpg" alt="Rizal Park">
+			<div class="card-container">
+				<h4><b>Rizal Park</b></h4>
+				<p>Crystal clear waters and white sandy beaches.</p>
+				<div class="card-details">
+					<div class="price">
+						<p>From</p>
+						<h3><span>₱</span>1,500.50</h3>
+						<p>*Price varies</p>
+					</div>
+					<div class="ratings">
+						<div>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star-half-stroke"></i></span> 
+						</div>
+						<p>4.6 (5.5k)</p>
+					</div>
+				</div>
+					<h5>
+						<span><i class="fa-regular fa-clock"></i></span> 7 days
+					</h5>
+					<p>
+						<span><i class="fa-solid fa-check"></i></span> Free Cancellation
+					</p>
+			</div>
+		</div>
+
+		<div class="card">
+			<img class="mayon-2" src="assets/mayon-2.jpg" alt="Mayon-2">
+			<div class="card-container">
+				<h4><b>Mayon Volcano</b></h4>
+				<p>Crystal clear waters and white sandy beaches.</p>
+				<div class="card-details">
+					<div class="price">
+						<p>From</p>
+						<h3><span>₱</span>2,400.50</h3>
+						<p>*Price varies</p>
+					</div>
+					<div class="ratings">
+						<div>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star-half-stroke"></i></span> 
+						</div>
+						<p>4.7 (2.5k)</p>
+					</div>
+				</div>
+					<h5>
+						<span><i class="fa-regular fa-clock"></i></span> 7 days
+					</h5>
+					<p>
+						<span><i class="fa-solid fa-check"></i></span> Free Cancellation
+					</p>
+			</div>
+		</div>
+
+		<div class="card">
+			<img class="nacpan" src="assets/nacpan.jpg" alt="Nacpan Palawan">
+			<div class="card-container">
+				<h4><b>Nacpan Palawan</b></h4>
+				<p>Crystal clear waters and white sandy beaches.</p>
+				<div class="card-details">
+					<div class="price">
+						<p>From</p>
+						<h3><span>₱</span>3,000.90</h3>
+						<p>*Price varies</p>
+					</div>
+					<div class="ratings">
+						<div>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star-half-stroke"></i></span> 
+						</div>
+						<p>4.8 (5.6k)</p>
+					</div>
+				</div>
+					<h5>
+						<span><i class="fa-regular fa-clock"></i></span> 7 days
+					</h5>
+					<p>
+						<span><i class="fa-solid fa-check"></i></span> Free Cancellation
+					</p>
+			</div>
+		</div>
+
+		<div class="card">
+			<img class="intramuros" src="assets/intramuros.jpg" alt="Intramuros">
+			<div class="card-container">
+				<h4><b>Intramuros</b></h4>
+				<p>Crystal clear waters and white sandy beaches.</p>
+				<div class="card-details">
+					<div class="price">
+						<p>From</p>
+						<h3><span>₱</span>1,500.50</h3>
+						<p>*Price varies</p>
+					</div>
+					<div class="ratings">
+						<div>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star-half-stroke"></i></span> 
+						</div>
+						<p>4.7 (2.5k)</p>
+					</div>
+				</div>
+					<h5>
+						<span><i class="fa-regular fa-clock"></i></span> 7 days
+					</h5>
+					<p>
+						<span><i class="fa-solid fa-check"></i></span> Free Cancellation
+					</p>
+			</div>`
+		</div>
+
+		<div class="card">
+			<img class="vigan" src="assets/vigan.jpg" alt="Vigan City">
+			<div class="card-container">
+				<h4><b>Vigan City</b></h4>
+				<p>Crystal clear waters and white sandy beaches.</p>
+				<div class="card-details">
+					<div class="price">
+						<p>From</p>
+						<h3><span>₱</span>2,500.50</h3>
+						<p>*Price varies</p>
+					</div>
+					<div class="ratings">
+						<div>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star-half-stroke"></i></span> 
+						</div>
+						<p>4.8 (4.5k)</p>
+					</div>
+				</div>
+					<h5>
+						<span><i class="fa-regular fa-clock"></i></span> 7 days
+					</h5>
+					<p>
+						<span><i class="fa-solid fa-check"></i></span> Free Cancellation
+					</p>
+			</div>
+		</div>
+
+		<div class="card">
+			<img class="baguio" src="assets/baguio.jpg" alt="Baguio City">
+			<div class="card-container">
+				<h4><b>Baguio City</b></h4>
+				<p>Crystal clear waters and white sandy beaches.</p>
+				<div class="card-details">
+					<div class="price">
+						<p>From</p>
+						<h3><span>₱</span>2,500.55</h3>
+						<p>*Price varies</p>
+					</div>
+					<div class="ratings">
+						<div>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star"></i></span>
+							<span><i class="fa-solid fa-star-half-stroke"></i></span> 
+						</div>
+						<p>4.8 (2.3k)</p>
+					</div>
+				</div>
+					<h5>
+						<span><i class="fa-regular fa-clock"></i></span> 7 days
+					</h5>
+					<p>
+						<span><i class="fa-solid fa-check"></i></span> Free Cancellation
+					</p>
+			</div>
+		</div>
+
+	</div>
+	<!--------------------------- END OF DESTINATION GRID ---------------------------->
+
+	<!--------------------------- START OF TOP DESTINATION IN PH ---------------------------->
+	<div class="und">
+		<div class="underline"></div>
+	</div>
+	<div class="head-top">
+        <h2 class="title-top">Top Destination in Philippines<span><i class="fa-solid fa-location-dot location-icon"></i></span>
+        </h2>
+    </div>
+	<div class="top-destination">
+    <div class="destination-display">
+        <div class="div1">
+            <img class="lionshead" src="assets/lionheads.webp" alt="Lionshead Rock" loading="lazy" tabindex="0">
+        </div>
+        <div class="div2">
+            <img class="boracay-2" src="assets/boracay-2.jpg" alt="Boracay Beach" loading="lazy" tabindex="0">
+        </div>
+        <div class="div3">
+            <img class="sagada" src="assets/sagada.jpg" alt="Sagada Rice Terraces" loading="lazy" tabindex="0">
+        </div>
+        <div class="div4">
+            <img class="manila" src="assets/manila.jpg" alt="Manila Cityscape" loading="lazy" tabindex="0">
+        </div>
+        <div class="div5">
+            <img class="coron" src="assets/coron.jpg" alt="Coron Island" loading="lazy" tabindex="0">
+        </div>
+    </div>
+</div>
+<!--------------------------- END OF TOP DESTINATION IN PH ---------------------------->
+	
+		<footer>
+			<div class="footer-container">
+			<div class="social-icons">
+				<a href="##"><i class="fa-brands fa-facebook"></i></a>
+				<a href="##"><i class="fa-brands fa-twitter"></i></a>
+				<a href="##"><i class="fa-brands fa-github"></i></a>
+				<a href="##"><i class="fa-brands fa-instagram"></i></a>
+				<a href="##"><i class="fa-brands fa-linkedin"></i></a>
+			</div>
+			<div class="footer-nav">
+				<ul>
+					<li> <a href="index.html">Home</a> </li>
+					<li> <a href="about.html">about</a> </li>
+					<li> <a href="contact.html">Contact Us</a> </li>
+					<li> <a href="team.html">Our Team</a> </li>
+				</ul>
+			</div>
+			<div class="copy-right">
+				<p>Copyright &copy;2025 Designed by <span class="designer"> Jay-e</p>
+			</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="view.js"></script>
+</body>
+</html>
