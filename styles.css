@@ -487,3 +487,127 @@ footer {
   color: var(--text);
 }
 
+
+@media (min-width: 1024px) {
+ 
+  .travel-pictures {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 40px 60px 30px 60px;
+  }
+
+  .explore-header {
+    margin-left: 5rem;
+  }
+
+  .centered-text {
+    font-size: 108px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .travel-pictures {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px 40px 20px 40px;
+  }
+
+  .explore-header {
+    margin-left: 3rem;
+  }
+
+  .centered-text {
+    font-size: 72px;
+  }
+
+  .name-of-web {
+    font-size: 20px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .book-btn {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .inquire-form {
+    width: 400px;
+    transform: translate(50%, 50%);
+  }
+}
+
+
+@media (max-width: 767px) {
+  .travel-pictures {
+    grid-template-columns: 1fr;
+    margin: 20px 20px 10px 20px;
+  }
+
+  .explore-header {
+    margin-left: 1rem;
+  }
+
+  .centered-text {
+    font-size: 48px;
+    transform: translate(-50%, -80%);
+  }
+
+  .name-of-web {
+    font-size: 18px;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .book-btn {
+    width: 90px;
+    height: 28px;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  .inquire-form {
+    width: 90%;
+    transform: translate(5%, 10%);
+  }
+
+  .f-name,
+  .l-name,
+  .phone-number,
+  .email {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+
+  .footer-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social-icons {
+    gap: 10px;
+  }
+
+  .social-icons a {
+    font-size: 28px;
+  }
+
+  .copy-right {
+    font-size: 12px;
+  }
+}
