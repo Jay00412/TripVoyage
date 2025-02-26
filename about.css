@@ -11,6 +11,9 @@
     --highlight: #CDFB82; 
     --font-family: 'Poppins', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
