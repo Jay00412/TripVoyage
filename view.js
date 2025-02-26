@@ -45,3 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.querySelector(".explore-btn").addEventListener("click", function() {
+    document.querySelector(".destination-grid").scrollIntoView({ behavior: "smooth" });
+  });
+
+
